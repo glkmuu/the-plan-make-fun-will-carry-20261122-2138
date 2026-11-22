@@ -1,12 +1,18 @@
 import os
 
 TEXT = (
-    "Day 1 post a $30 Etsy rescue gig on Fiverr: rewrite title, 13 tags, "
-    "alt-text for vintage sellers with no sales. Find buyers in r/EtsySellers "
-    "posts asking why nothing sells, reply with one free fixed listing, link "
-    "the gig. Spend $100 on Fiverr ads. 15 sales in 30 days = $450."
+    "Day 1 list a $30 Fiverr gig: AI resume + LinkedIn rewrite in 2 hours, not days. "
+    "Answer 10 buyer requests daily \u2014 resume gigs there carry 1,000+ reviews, "
+    "demand is proven. Spend $0 on ads; $25 to boost it after 5 sales. "
+    "20 orders in 30 days = $600, less Fiverr's 20% = $480 kept."
 )
 
-os.makedirs("/output", exist_ok=True)
-with open("/output/entry.txt", "w", encoding="utf-8", newline="\n") as f:
-    f.write(TEXT)
+
+def main() -> None:
+    os.makedirs("/output", exist_ok=True)
+    with open("/output/entry.txt", "w", encoding="utf-8", newline="\n") as f:
+        f.write(TEXT + "\n")
+
+
+if __name__ == "__main__":
+    main()
